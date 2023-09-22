@@ -1,0 +1,46 @@
+[user]
+  name = Your Name
+  email = your.name@email.com
+
+[init]
+  # Always use "main" as default branch name
+  defaultBranch = main
+
+[alias]
+  aliases = !git config --get-regexp alias | sed -re 's/alias\\.(\\S*)\\s(.*)$/\\1 = \\2/g'
+  co = checkout
+  st = status
+  dw = diff --color-words
+
+  # Preferred logging (pretty and max 1 week old)
+  lg = log --graph --date=relative --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset' --since=1.weeks
+
+  # List local commits that were not pushed to remote repository
+  review-local = "!git lg @{push}.."
+
+  # Undo a single file to last commit
+  rollback = checkout --
+
+  # Rephrase last commit message
+  reword = commit --amend -m
+
+  # Undo last commit but keep changed files in stage
+  uncommit = reset --soft HEAD~1
+
+  # Remove file(s) from Git but not from disk
+  untrack = rm --cache
+
+  # Searches through all git references for a given keyword
+  search = "!f() { git grep --recurse-submodules $1 $(git rev-list --all); }; f"
+
+# Use VS Code for as default editor when one is needed
+[core]
+  editor = code --wait
+[diff]
+  tool = vscode
+[difftool "vscode"]
+  cmd = code --wait --diff $LOCAL $REMOTE
+[merge]
+  tool = vscode
+[mergetool "vscode"]
+  cmd = code --wait $MERGED
