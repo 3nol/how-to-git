@@ -1,17 +1,16 @@
 # Branches
 
 Here, we will look at parallel versioning. Imagine, multiple developers want 
-to work on a single project but do not want to interfer with each other.
-Also, at some point, they want to _merge_ their work again.
+to work on a single project but do not want to interfer with each other. They
+might be working on independent features or bug fixes in parallel.
+At some point, they want to _merge_ their changes again.
 
-Branches model these parallel version timelines for each developer or each
-feature you might work on.
+Branches model these parallel version timelines for each developer.
 
 ## How to split into branches?
 
-Branching allows you to "fork" version history. It can be helpful for working
-on independent features or bug fixes in parallel. Branches are completely
-independent of each another and only "interact" when merging them again.
+Branching allows you to "fork" version history. Branches are completely
+independent of each another and only "interact" when merging them.
 
 You can check which branch you are currently on using:
 
@@ -21,10 +20,10 @@ git branch --show-current
 
 ### CLI
 
-The following command can be used for creating out a branch:
+The following commands can be used for creating a branch:
 
 - `git branch [-a]` \
-    Lists all existing branches. Specifying `-a` includes all branches,
+    Lists all existing branches. Specifying `-a` shows all branches,
     even on remote hosts (next chapter).
 - `git checkout -b <branch-name>` \
     Creates a new branch and switches to it.
@@ -51,13 +50,13 @@ To following commands allow you to re-combine existing branches.
 - `git branch -d <branch-name>` \
     Deletes a branch. Use only if you are sure that all changes have been merged.
 
-## What are merge conflicts?
+## Merge conflicts
 
 When merging branches, conflicts can occur. Git does its best effort in combining
 the changes. But in the scenario of changing a certain file in _both_ branches, Git
 does not decide for you which change to prioritize.
 
-Instead, you might receive a message like:
+Instead, you might get a message like:
 
 ```
 Auto-merging hello.rb

@@ -30,7 +30,7 @@ o <-- o <-- o <-- o <---- <strong><font color="green">o</font></strong>
 
 Commits in Git are immutable. This doesn't mean that mistakes can't be corrected. 
 However, it's just that edits to the commit history are actually creating entirely 
-new commits, and references (see below) are updated to point to the new ones.
+new commits, and references are updated to point to the new ones.
 
 ## Structure of a snapshot 
 
@@ -60,13 +60,13 @@ that commits don't contain objects, rather just have a reference to them using t
 ## CLI
 
 Using the command-line interface (CLI), commits can be managed. As mentioned, commits are 
-immutable. To edit a commit, an old has to be removed and a new commit created.
+immutable. To edit a commit, an old commit has to be removed and a new one created.
 
 ### Creating commits
 
 The following command is used to create a commit with a specific commit message:
 
-- `git commit -m <message>`
+- `git commit -m "<message>"`
 
 Note that we first need to introduce the concept of _staging_ before creating
 commits properly. If you don't want to use staging and directly include all
@@ -77,8 +77,7 @@ Here is a [guide](https://cbea.ms/git-commit/) on writing good messages.
 
 ### Removing Commits
 
-Multiple commands around the notion of removing or reverting changes in a commit.
-Of course, these commands can be extensively configured on top.
+Multiple commands exist around the notion of removing or reverting changes in a commit.
 
 - `git reset <commit-hash> -- <path>` \
     Resets a file to another commit hash.

@@ -3,10 +3,9 @@
 This is another concept that's orthogonal to the data model, but it's a part of
 the interface to create commits.
 
-One way you might imagine implementing snapshotting as described above is to have
-a "create snapshot" command that creates a new snapshot based on the current
-state of the working directory. Some version control tools work like this, but
-not Git. 
+One way you might imagine implementing snapshotting is to have a "create snapshot"
+command that creates a new snapshot based on the current state of the working 
+directory. Some version control tools work like this, but not Git. 
 
 We want clean snapshots, and it might not always be ideal to make a snapshot from
 the current state. For example, imagine a scenario where you've implemented two
@@ -15,7 +14,7 @@ introduces the first feature, and the next introduces the second feature.
 
 Git accommodates such scenarios by allowing you to specify which modifications
 should be included in the next snapshot through a mechanism called the _staging
-area_. Unstaged changes will not be included in your commits!
+area_. Unstaged changes will not be included in your commits.
 
 ## CLI
 
