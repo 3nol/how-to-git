@@ -17,11 +17,11 @@ separate branches. This might correspond to, for example, two separate features
 being developed in parallel, independently from each other. In the future,
 these branches may be merged to create a new snapshot that incorporates both of
 the features, producing a new history that looks like this, with the newly
-created merge commit shown in <strong><font color="green">green</font></strong>.
+created merge commit shown in <strong>bold</strong>.
 
 <pre class="highlight">
 <code>
-o <-- o <-- o <-- o <---- <strong><font color="green">o</font></strong>
+o <-- o <-- o <-- o <---- <strong>o</strong>
             ^            /
              \          v
               --- o <-- o
