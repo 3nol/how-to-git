@@ -59,7 +59,7 @@ does not decide for you which change to prioritize.
 Instead, you might get a message like:
 
 ```
-Auto-merging hello.rb
+Auto-merging HelloWorld.java
 CONFLICT (content): Merge conflict in HelloWorld.java
 Automatic merge failed; fix conflicts and then commit the result.
 ```
