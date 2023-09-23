@@ -2,7 +2,7 @@
 
 Here are some more advanced commands, tips and tricks.
 
-## More Commands
+## More Git Commands
 
 - `git config -e [--global]` \
     Lets you edit Git's configuration. The entire configuration is stored
@@ -26,7 +26,6 @@ Here are some more advanced commands, tips and tricks.
 - `git cherry <branch-name>` \
     Compares the current branch to a given one. Displays which commits are only
     on one branch and which are on the other.
-
 
 ## Data and config storage
 
@@ -53,6 +52,35 @@ Here are some more advanced commands, tips and tricks.
     You will also find an example for a git-ignore file in this directory.
     This example targets the use in Java development, as all unnecessary files
     that may come up in this environment are ignored there.
+
+## Interaction with private remote repositories
+
+As mentioned, you can clone (and pull/push) either via HTTPS or SSH. When it comes
+to private repositories, you also need to authenticate yourself. Most remote hosts allow
+using SSH keys for authentication, which are very convenient.
+
+Here is a tutorial on how to set them up for GitHub (the setup on GitLab is similar):
+
+1. Using the `ssh-keygen` command, generate a key pair. See `man ssh-keygen` for details.
+2. This command will generate two files, corresponding to your private and your public key.
+    The public key is identified by its extensions `.pub`.
+3. Regarding the _private_ key:
+    - Never share it with anyone! It is your secret passkey.
+    - Go to the file `~/.ssh/config`. If it does not exist, create it.
+    - Enter the following lines in the file:
+
+        ```
+        Host github.com
+          PreferredAuthentications publickey
+          IdentityFile <path-to-your-private-key>
+        ```
+
+4. Regarding the _public_ key:
+    - Go to the settings page of your GitHub profile, then "SSH and GPG keys".
+        On GitLab, this page is called "SSH Keys".
+    - Add a new SSH key, and give it a meaningful title. Now, you copy and paste the
+        contents of the public key file into the "Key" textbox and save it.
+5. You should now be able to interact with private repositories via SSH.
 
 ## Useful websites
 
