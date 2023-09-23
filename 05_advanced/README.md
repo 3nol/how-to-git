@@ -50,6 +50,10 @@ Here are some more advanced commands, tips and tricks.
     files which Git should ignore (i.e. never to be tracked). Useful for
     temporary or generated files, like build artifacts.
 
+    You will also find an example for a git-ignore file in this directory.
+    This example targets the use in Java development, as all unnecessary files
+    that may come up in this environment are ignored there.
+
 ## Useful websites
 
 Here are some useful websites to consult when using Git:
