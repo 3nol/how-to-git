@@ -9,15 +9,15 @@ Here are some more advanced commands, tips and tricks.
     in a file named `.gitconfig` (see below). Specifying the flag `--global`
     lets you edit the system-wide Git configuration.
 - `git add -p <path>` \
-    Interactive staging for files. Very useful when only partially adding 
+    Interactive staging for files. Very useful when only partially adding
     changes of a file.
 - `git rebase -i <reference>` \
-    Interactive branch operations. This is a very powerful tool which can not 
+    Interactive branch operations. This is a very powerful tool which can not
     only rebase, but also reorder, edit, squash, delete, and merge commits.
 - `git blame <path>` \
     Shows you who last edited which line in a given file path.
 - `git stash [push | pop] -- <path>` \
-    Temporarily removes modifications (staged or unstaged) from your working 
+    Temporarily removes modifications (staged or unstaged) from your working
     directory. Pushing allows you to remove the changes, using `pop` allows
     you to bring back the most recently removed changes. Useful for cleaning
     up you workspace.
@@ -36,17 +36,17 @@ Here are some more advanced commands, tips and tricks.
 
 2. `.gitconfig` file \
     As mentioned above, Git is [highly customizable](https://git-scm.com/docs/git-config).
-    This file stores the entire configuration. You will find a local 
-    configuration in `.git/config`, while the system-wide Git config is usually 
+    This file stores the entire configuration. You will find a local
+    configuration in `.git/config`, while the system-wide Git config is usually
     stored in `~/.gitconfig`.
 
-    An example for a config file can be found in this directory as well. You 
-    might notice a section of _aliases_ in there. With them, similar to a shell, 
+    An example for a config file can be found in this directory as well. You
+    might notice a section of _aliases_ in there. With them, similar to a shell,
     you can define your own commands. The examples you see are ones that I use
     personally. If you want to learn more about aliases, look [here](https://git-scm.com/docs/git-config#Documentation/git-config.txt-alias).
 
 3. `.gitignore` file \
-    This special file allows you to [specify](https://git-scm.com/docs/gitignore) 
+    This special file allows you to [specify](https://git-scm.com/docs/gitignore)
     files which Git should ignore (i.e. never to be tracked). Useful for
     temporary or generated files, like build artifacts.
 

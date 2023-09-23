@@ -28,11 +28,11 @@ o <-- o <-- o <-- o <---- <strong><font color="green">o</font></strong>
 </code>
 </pre>
 
-Commits in Git are immutable. This doesn't mean that mistakes can't be corrected. 
-However, it's just that edits to the commit history are actually creating entirely 
+Commits in Git are immutable. This doesn't mean that mistakes can't be corrected.
+However, it's just that edits to the commit history are actually creating entirely
 new commits, and references are updated to point to the new ones.
 
-## Structure of a snapshot 
+## Structure of a snapshot
 
 It may be instructive to see Git's data model written down in Python-like pseudo-code.
 It's a clean, simple model of history.
@@ -82,7 +82,7 @@ Multiple commands exist around the notion of removing or reverting changes in a 
 - `git reset <commit-hash> -- <path>` \
     Resets a file to another commit hash.
 - `git revert <commit-hash>` \
-    Undoes all changes that have been introduced from the given commit. Note that this 
+    Undoes all changes that have been introduced from the given commit. Note that this
     command adds a new commit reverting the changes, instead of removing them.
 - `git commit --amend` \
     Edits the last commit's contents and message.

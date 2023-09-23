@@ -4,12 +4,12 @@ This is another concept that's orthogonal to the data model, but it's a part of
 the interface to create commits.
 
 One way you might imagine implementing snapshotting is to have a "create snapshot"
-command that creates a new snapshot based on the current state of the working 
-directory. Some version control tools work like this, but not Git. 
+command that creates a new snapshot based on the current state of the working
+directory. Some version control tools work like this, but not Git.
 
 We want clean snapshots, and it might not always be ideal to make a snapshot from
 the current state. For example, imagine a scenario where you've implemented two
-separate features, and you want to create two separate commits, where the first 
+separate features, and you want to create two separate commits, where the first
 introduces the first feature, and the next introduces the second feature.
 
 Git accommodates such scenarios by allowing you to specify which modifications
@@ -32,7 +32,7 @@ The following command is used push files into the staging area:
 - `git add <path>`
 
 You can specify one or multiple files and even use wildcards to add multiple files
-at once. For example, when doing Java development, you can use `git add "*.java"`. 
+at once. For example, when doing Java development, you can use `git add "*.java"`.
 
 ### Removing from staging area
 

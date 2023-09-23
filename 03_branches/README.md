@@ -1,6 +1,6 @@
 # Branches
 
-Here, we will look at parallel versioning. Imagine, multiple developers want 
+Here, we will look at parallel versioning. Imagine, multiple developers want
 to work on a single project but do not want to interfer with each other. They
 might be working on independent features or bug fixes in parallel.
 At some point, they want to _merge_ their changes again.
@@ -45,7 +45,7 @@ To following commands allow you to re-combine existing branches.
 - `git rebase <branch-name>` \
     Another way of combining branches. Instead of letting both changes "collide",
     rebasing moves the changes on the current branch _on top_ of the other changes.
-    You can remember this by imagining this command setting the other branch as 
+    You can remember this by imagining this command setting the other branch as
     "basis" for your current branch.
 - `git branch -d <branch-name>` \
     Deletes a branch. Use only if you are sure that all changes have been merged.
