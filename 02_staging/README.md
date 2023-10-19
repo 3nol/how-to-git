@@ -36,7 +36,7 @@ at once. For example, when doing Java development, you can use `git add "*.java"
 
 ### Removing from staging area
 
-Use this command for removing a one or multiple files from the staging area:
+Use this command for removing one or multiple files from the staging area:
 
 - `git restore --staged <path>` \
     Does not change the content at the path, but unstages it.

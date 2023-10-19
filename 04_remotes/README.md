@@ -22,7 +22,7 @@ You can use `git help remote` to display all relevant information on remotes.
     source will be listed here already.
 - `git remote add <remote-name> <url>` \
     Adds a remote under the given name. Commonly, you only have one remote for
-    syncing. It's convention to call this remote `origin`.
+    syncing. By convention, we call this remote `origin`.
 - `git fetch` \
     Retrieves all new updates on objects/references from a remote. Does not perform
     any changes locally yet.
@@ -43,6 +43,6 @@ You can use `git help remote` to display all relevant information on remotes.
     GitHub has a specific way of contributing code to other projects, called _pull
     requests_. Yes, that name is terrible; it has nothing to do with the `git pull` command.
 - **GitLab**: GitHub is not special: there are other hosts, like
-    [GitLab](https://gitlab.com/), which mostly used in research and academia.
+    [GitLab](https://gitlab.com/), which is mostly used in research and academia.
 - **BitBucket**: Another host, that is mostly used in the corporate world, is
     [BitBucket](https://bitbucket.org/).

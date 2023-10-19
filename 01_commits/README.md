@@ -69,8 +69,8 @@ The following command is used to create a commit with a specific commit message:
 - `git commit -m "<message>"`
 
 Note that we first need to introduce the concept of _staging_ before creating
-commits properly. If you don't want to use staging and directly include all
-changes into you commit, you can use the `-a` flag.
+commits properly (next chapter). If you don't want to use staging and directly include
+all changes into you commit, you can use the `-a` flag.
 
 It is important to write **good** commit messages. You will thank yourself later.
 Here is a [guide](https://cbea.ms/git-commit/) on writing good messages.

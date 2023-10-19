@@ -9,7 +9,7 @@ Branches model these parallel version timelines for each developer.
 
 ## How to split into branches?
 
-Branching allows you to "fork" version history. Branches are completely
+Branching allows you to fork version history. Branches are completely
 independent of each another and only "interact" when merging them.
 
 You can check which branch you are currently on using:
@@ -20,7 +20,7 @@ git branch --show-current
 
 ### CLI
 
-The following commands can be used for creating a branch:
+The following commands can be used for changing to a different branch:
 
 - `git branch [-a]` \
     Lists all existing branches. Specifying `-a` shows all branches,
@@ -46,9 +46,9 @@ To following commands allow you to re-combine existing branches.
     Another way of combining branches. Instead of letting both changes "collide",
     rebasing moves the changes on the current branch _on top_ of the other changes.
     You can remember this by imagining this command setting the other branch as
-    "basis" for your current branch.
+    "base" for your current branch.
 - `git branch -d <branch-name>` \
-    Deletes a branch. Use only if you are sure that all changes have been merged.
+    Deletes a branch. Use only if you are sure that you won't lose changes.
 
 ## Merge conflicts
 

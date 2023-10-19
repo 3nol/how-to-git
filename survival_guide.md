@@ -47,11 +47,11 @@ website [Oh Shit, Git!?!](https://ohshitgit.com) which covers dealing with Git m
     use `git reset --hard HEAD~1` instead.
 - **You pushed something to a remote which should not be there.**
     - Solution (1) \
-        Theoretically, you can remove the commit as should above and force-push the changes.
+        Theoretically, you can remove the commit as shown above and force-push the changes.
         You will need force-pushing because you are not going forward in time, but deleting
         a commit from the past. However, that's a) not good practice, and b) force-pushing
         is often disabled on remote branches per default.
     - Solution (2) \
         You can remove the changes you want to exclude, then stage, commit, and push their
-        _removal_ as new commit. This is often the better approach. See chapter "01_commits"
+        _removal_ as new commit. This is usually the better approach. See chapter "01_commits"
         for more information on this.

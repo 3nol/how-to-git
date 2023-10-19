@@ -53,17 +53,17 @@ Here are some more advanced commands, tips and tricks.
     This example targets the use in Java development, as all unnecessary files
     that may come up in this environment are ignored there.
 
-## Interaction with private remote repositories
+## Interaction with private/secured remote repositories
 
 As mentioned, you can clone (and pull/push) either via HTTPS or SSH. When it comes
 to private repositories, you also need to authenticate yourself. Most remote hosts allow
 using SSH keys for authentication, which are very convenient.
 
-Here is a tutorial on how to set them up for GitHub (the setup on GitLab is similar):
+Here is a tutorial on how to set them up for GitHub (the setup is similar on GitLab):
 
 1. Using the `ssh-keygen` command, generate a key pair. See `man ssh-keygen` for details.
 2. This command will generate two files, corresponding to your private and your public key.
-    The public key is identified by its extensions `.pub`.
+    The public key is identified by its extension `.pub`.
 3. Regarding the _private_ key:
     - Never share it with anyone! It is your secret passkey.
     - Go to the file `~/.ssh/config`. If it does not exist, create it.
